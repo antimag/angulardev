@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3 class="block">Users</h3>
+    <table class="table table-striped">
+      <tr>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      <tr ng-hide="users.length" >
+        <td colspan="5">No users found, Please create one.</td>
+      </tr>
+      <tr ng-repeat="user in users">
+        <td>{{user.email}}</td>
+        <td>
+        <a href="#/users/{{user.id}}/edit">Edit</a> |<a href="#/users/{{user.id}}">User Profile</a>|<a href="" ng-click="deleteUser(user.id)">Remove</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

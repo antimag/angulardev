@@ -1,0 +1,25 @@
+<br/>
+<div class="row">
+  <div class="col-md-12">
+    <h3 class="block">User</h3>
+    <table class="table table-striped">
+      <tr>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Action</th>
+      </tr>
+      <tr ng-hide="user" >
+        <td colspan="5">No users found, Please create one.</td>
+      </tr>
+      <tr ng-show="user">
+        <td>{{user.email}}</td>
+        <td>{{user.username}}</td>
+      </tr>
+      <tr>
+        <td>
+          <a class="btn btn-default" href="/"> Back</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
