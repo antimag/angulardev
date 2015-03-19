@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -41,3 +38,5 @@ end
  gem 'angular-rails-templates'
  gem 'angular_rails_csrf'
  gem 'devise', '~> 3.4.0'
+ gem 'pg', group: [:production]
+ gem 'mysql2', group: [:development, :test]
